@@ -1,0 +1,64 @@
+.info-section {
+    background: url('../public/images/house-blueprint.png') left bottom/contain
+        no-repeat;
+    padding: 6.25rem 0;
+    background-color: #f7f7f7;
+}
+
+.info-section p img {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.info-icons {
+    margin-top: 70px;
+}
+
+.info-icon {
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+
+.info-icon img {
+    background-color: var(--primary);
+    padding: 1rem;
+}
+
+.info-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+.contentwrap {
+    text-align: center;
+}
+
+.contentwrap h2 {
+    margin-bottom: 40px;
+}
+
+.contentwrap h6 {
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.contentwrap p {
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-section p img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contentwrap h6 {
+        width: 100%;
+    }
+    .info-section p img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

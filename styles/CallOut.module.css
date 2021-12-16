@@ -1,0 +1,64 @@
+.callout-section {
+    background-color: var(--primero);
+    padding: 2.25rem 0 9rem;
+    position: relative;
+}
+
+.callout-section section {
+    position: relative;
+    z-index: 4;
+}
+
+.callout-intro {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.callout-intro h2 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.callout-intro::after {
+    content: '';
+    display: inline-flex;
+    width: 30%;
+    height: 2px;
+    background-color: var(--tercero);
+    margin-top: 50px;
+}
+
+.icon-box h4 {
+    margin: 20px 0;
+}
+
+.icon-box p {
+    color: #fff;
+}
+
+.icon-box {
+    text-align: center;
+    color: #fff;
+    background-color: var(--otroplata);
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.icon-box svg {
+    color: var(--tercero);
+    font-size: 80px;
+}
+
+.icon-box h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.servbody {
+    margin: 20px 10% 70px;
+}
+
+.callout-intro .related-title {
+    color: #fff;
+    font-weight: 600;
+}

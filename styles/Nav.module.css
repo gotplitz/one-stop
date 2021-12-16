@@ -1,0 +1,333 @@
+/* ===================================
+    1. Top Bar
+    ====================================== */
+
+.primary-bar {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.top-wrapper {
+    width: 95%;
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrap,
+.logo-wrap a {
+    background-color: transparent;
+}
+
+.logo-wrap a img {
+    width: auto;
+    height: 100%;
+    max-height: 100px;
+    background-color: transparent;
+}
+
+.navigation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* FEATURED BUTTONS */
+.featbtnswrap {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    left: 50%;
+    width: 95%;
+    max-width: 1500px;
+    transform: translateX(-50%);
+    bottom: -58px;
+    height: auto;
+}
+
+.featbtns {
+    display: flex;
+    height: auto;
+    align-items: center;
+    position: relative;
+}
+
+.btn1 {
+    color: #000;
+    display: inline-flex;
+    background-color: rgba(242, 255, 0, 0.8);
+    padding: 1.1rem 40px;
+    transition: all 0.5s ease-out;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color: rgba(206, 24, 24, 0.8);
+    transition: all 0.3s ease-in;
+}
+
+.btn2 {
+    color: var(--tercero);
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.1rem 40px;
+    transition: all 0.5s ease-out;
+}
+
+.btn2:hover {
+    color: #fff;
+    background-color: rgba(206, 24, 24, 0.8);
+    transition: all 0.3s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    .primary-bar {
+        height: auto;
+    }
+
+    .primary-bar {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .top-wrapper {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 10px 0 10px;
+        width: 95%;
+    }
+
+    .logo-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-container {
+        width: 100%;
+    }
+
+    .featbtnswrap {
+        position: relative;
+        bottom: 0;
+        height: 40px;
+        left: auto;
+        transform: translateX(0);
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .featbtns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 50%;
+        display: table-cell;
+        text-align: center;
+        padding: 0.5rem 10px;
+    }
+
+    .featbtnswrap {
+        margin: 1px;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    .primary-bar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 14px;
+        padding: 0.5rem 10px;
+    }
+}
+
+@media only screen and (max-width: 297px) {
+    .btn1,
+    .btn2 {
+        font-size: 13px;
+        padding: 0.5rem 5px;
+    }
+}
+
+.featured-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease-in;
+}
+
+.featured-button a {
+    margin-left: 40px;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+.featured-button:focus,
+.featured-button span {
+    font-family: var(--fdos);
+    font-weight: 300;
+    color: var(--segundo);
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+    word-break: normal;
+}
+
+.featured-button svg {
+    color: var(--segundo);
+    margin-right: 10px;
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.featured-button a:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.featured-button a:hover span,
+.featured-button a:hover svg {
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.read-more-home .featured-button a {
+    background-color: var(--segundo);
+}
+
+.read-more-home .featured-button a:hover {
+    background-color: var(--plata);
+    color: var(--primero);
+}
+
+@media only screen and (max-width: 1395px) {
+    .featured-button a span,
+    .featured-button a svg {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1194px) {
+    .featured-button a span,
+    .featured-button a svg {
+        font-size: 22px;
+    }
+
+    .featured-button a {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .featured-button a {
+        padding: 7px 10px 10px;
+    }
+
+    .featured-button a span,
+    .featured-button a svg {
+        font-size: 18px;
+    }
+
+    .featured-button a {
+        margin-left: 10px;
+    }
+
+    .logo-wrap a img {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .featured-button a svg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 955px) {
+    .featured-button {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .featured-button {
+        margin-left: 20px;
+        display: inline-flex;
+        border: none;
+    }
+
+    .featured-button a svg {
+        display: inline-flex;
+    }
+
+    .navigation-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .featured-button a {
+        display: inline;
+        height: 100%;
+        padding: 15px 10px;
+    }
+    .featured-button span {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .featured-button {
+        margin-left: 20px;
+    }
+    .featured-button {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .navigation-container {
+        justify-content: center;
+    }
+
+    .featured-button {
+        width: 100%;
+    }
+
+    .featured-button a {
+        padding: 15px 0;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .featured-button a svg {
+        display: flex;
+    }
+}

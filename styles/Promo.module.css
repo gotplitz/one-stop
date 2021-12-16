@@ -1,0 +1,44 @@
+.promo-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../public/images/Best-roofing-work-roof-repair-North-Haven-CT.jpg')
+            center 30% / cover no-repeat;
+    padding: 6.25rem 0;
+    height: 300px;
+    margin-bottom: 400px;
+}
+
+.contentwrap {
+    background-color: var(--light-grey);
+    border-radius: 16px;
+    padding: 70px 50px;
+    margin-top: 150px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 959px) {
+    .contentwrap {
+        padding: 60px 30px;
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .contentwrap {
+        padding: 40px 30px;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .promo-section {
+        margin-bottom: 450px;
+    }
+    .contentwrap {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .contentwrap p {
+        font-size: 14px;
+    }
+}

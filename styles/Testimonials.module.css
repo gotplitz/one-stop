@@ -1,0 +1,9 @@
+.home-testimonials-wrapper {
+    background-color: #000;
+}
+
+.icon-box {
+    border: 8px solid var(--primary);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
